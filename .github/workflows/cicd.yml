@@ -6,7 +6,7 @@ on: # specify the build to trigger the automated ci/cd
       - "main"
 
 env:
-  REGISTRY: jfontanel/clockbox
+  REGISTRY: clockbox
 
 
 jobs:

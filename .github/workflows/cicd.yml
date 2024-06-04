@@ -21,7 +21,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          registry: ${{ env.REGISTRY }}
         
       - name: Get current date # get the date of the build
         id: date

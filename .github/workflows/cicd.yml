@@ -33,7 +33,7 @@ jobs:
       
       - name: Check with Checkov
         id: checkov
-        uses: bridgecrewio/chckov-action@master
+        uses: bridgecrewio/checkov-action@master
         with:
           framework: dockerfile
         

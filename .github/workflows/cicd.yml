@@ -35,6 +35,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
+          quiet: true
           framework: dockerfile
         
       - name: Build and push # build the container image and push it to Docker

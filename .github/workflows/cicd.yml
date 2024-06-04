@@ -5,6 +5,10 @@ on: # specify the build to trigger the automated ci/cd
     branches:
       - "main"
 
+env:
+  REGISTRY: clockbox
+
+
 jobs:
   build:
     name: Build Docker image

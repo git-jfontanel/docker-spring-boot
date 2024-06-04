@@ -38,7 +38,7 @@ jobs:
           quiet: true             # Display only failed checked
           framework: dockerfile   # scanning only for Docker
           soft_fail: true         # Do not failed the pipeline
-          external-checks-git: https://github.com/git-jfontanel/checkov-custom-policies.git//Docker
+          external_checks_repos: https://github.com/git-jfontanel/checkov-custom-policies.git//Docker   # Repo with my custom Docker policies
         
       - name: Build and push # build the container image and push it to Docker
         uses: docker/build-push-action@v4

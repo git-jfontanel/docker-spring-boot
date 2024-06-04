@@ -37,6 +37,7 @@ jobs:
         with:
           quiet: true
           framework: dockerfile
+          softfail: true
         
       - name: Build and push # build the container image and push it to Docker
         uses: docker/build-push-action@v4

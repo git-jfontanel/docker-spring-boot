@@ -1,6 +1,6 @@
 FROM node:19
 WORKDIR /usr/src/app
-LABEL foo="test"
+LABEL labellllll="test"
 COPY package*.json .
 RUN npm install
 COPY . .

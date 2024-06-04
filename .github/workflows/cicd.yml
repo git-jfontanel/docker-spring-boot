@@ -35,7 +35,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          quiet: true             # Display only failed checked
+          # quiet: true             # Display only failed checked
           framework: dockerfile   # scanning only for Docker
           soft_fail: true         # Do not failed the pipeline
           external_checks_repos: https://github.com/git-jfontanel/checkov-custom-policies.git//Docker   # Repo with my custom Docker policies

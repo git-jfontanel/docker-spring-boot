@@ -41,7 +41,6 @@ jobs:
           framework: dockerfile   # scanning only for Docker
           soft_fail: true         # Do not failed the pipeline
           external_checks_repos: https://github.com/git-jfontanel/checkov-custom-policies.git//Docker   # Repo with my custom Docker policies
-          log_level: DEBUG
           api-key: ${{ secrets.BC_API_KEY }}
         
       - name: Build and push # build the container image and push it to Docker
